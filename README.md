@@ -4,92 +4,60 @@ Optimize typography in Japanese.
 
 [https://kokushin.github.io/jpn.css/](https://kokushin.github.io/jpn.css/)
 
-![sample](https://raw.githubusercontent.com/kokushin/units/master/public/img/readme/img_01.png)
+![jpncss](https://raw.githubusercontent.com/kokushin/jpn.css/master/docs/img/jpncss.gif)
 
-[![npm version](https://badge.fury.io/js/unitscss.svg)](https://badge.fury.io/js/unitscss)
-[![npm download](http://img.shields.io/npm/dm/unitscss.svg)](https://www.npmjs.com/package/unitscss)
-[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/kokushin/unitscss/master/LICENSE)
+[![npm version](https://badge.fury.io/js/jpn.css.svg)](https://badge.fury.io/js/jpn.css)
+[![npm download](http://img.shields.io/npm/dm/jpn.css.svg)](https://www.npmjs.com/package/jpn.css)
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/kokushin/jpn.css/master/LICENSE)
 
-## Document
+## 特徴
 
-[English](https://unitscss.com/docs/) / [日本語](https://unitscss.com/ja/docs/)
+jpn.cssは、BootstrapなどCSSフレームワークを適用させた際、日本語だと不格好に見えてしまう問題を解消するためのスタイルシートです。
 
-## Feature
+- **タイポグラフィを最適化**  
+画面下部にある「jpn.cssを無効にする」ボタンを押してみてください。最適化された結果を確認することができます。
 
-UNITS is a simple and beautiful component set. All you have to do is just load css files, copy and paste snippets, so easy that anyone can use.
+- **Bootstrap4に対応**  
+最新バージョンであるBootstrap4に対応しています。今後のアップデートで、より多くのフレームワークに対応させる予定です。
 
-- **Use Quickly**  
-All you have to do is just put units.css. Several components have been prepared already and you can choose components you want to use and apply it on your website.
+- **モダンなフォント設定**  
+フォントには美しくデザインされた「游ゴシック」を採用しています。
 
-- **Simple and Beautiful**  
-Each components are beautifully designed. The design will be updated periodically, We wont't apply big changes, but apply only a small changes such as adjusting margins.
+- **最低限の調整**  
+タイポグラフィ周りだけ最適化されるので、他の要素への影響はありません。
 
-- **Support Modern Browser**  
-UNITS is optimized to be used on th modern browser such as Microsoft Edge, Google Chrome, Firefox, Safari, How about old browsers? ... I'm sorry.
+## 使用方法
 
-- **Responsive Web design**  
-We uses responsive web design approches to display optimized design on all devices.
-
-- **Periodical Update**  
-UNITS is still a beta version, it will be updated periodically to a major version. Unitil the major version, We will add new components, optimize the source codes, adjusting its design.
-
-- **Support Japanese**  
-Because the developers are Japanese that we can support in Japanese. We have been optimizing web pages and updating documents written in japanese.
-
-## Installation
-
-UNITS itself can be downloaded from GitHub by cloning it or as a ZIP format, or you can download it via npm.
-
-```shell
-$ git clone https://github.com/kokushin/unitscss.git
-```
-
-```shell
-$ npm install unitscss --save
-```
-
-Let's load the necessary files.
+jpn.cssを `head` 内で読み込ませてください。フレームワークを利用している場合は、その後に読み込ませる必要があります。
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-<link rel="stylesheet" href="path/to/units.min.css">
-
-<script src="path/to/units.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/jpncss@latest/dist/bootstrap/jpn.min.css">
 ```
 
-## Usage
+## ダウンロード
 
-Write exact html snippets and give it the right classes starting with `uc-`. For example in the sample below you can make a card component attached with covered image.
+npm もしくは GitHub からダウンロードすることができます。
 
-```html
-<div class="uc-card _float">
-  <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
-  <h3 class="uc-card-title">Sample card</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.</p>
-  <div class="uc-btn _primary"><a href="#">Button</a></div>
-</div>
+```bash
+$ npm install jpncss -S
 ```
 
-It will be displayed on the browser like this:
+## Bootstrapデモ
 
-<img src="https://raw.githubusercontent.com/kokushin/units/master/public/img/readme/img_02.png" width="560">
+- [Jumbotron](https://kokushin.github.io/jpn.css/demo/bootstrap/jumbotron.html)
+- [Album](https://kokushin.github.io/jpn.css/demo/bootstrap/album.html)
+- [Blog](https://kokushin.github.io/jpn.css/demo/bootstrap/blog.html)
+- [Carousel](https://kokushin.github.io/jpn.css/demo/bootstrap/carousel.html)
+- [Signin](https://kokushin.github.io/jpn.css/demo/bootstrap/signin.html)
 
-## Demo
-
-[https://unitscss.com/themes/](https://unitscss.com/themes/)
-
-## Snippets
-
-[Please check codepen.](https://codepen.io/search/pens/?q=units&limit=kokushin)
-
-## Download
-[Download ZIP](https://github.com/kokushin/units/archive/master.zip)
+## ダウンロード
+[Download ZIP](https://github.com/kokushin/jpn.css/archive/master.zip)
 
 ## Github
-[https://github.com/kokushin/units](https://github.com/kokushin/units)
+[https://github.com/kokushin/jpn.css](https://github.com/kokushin/jpn.css)
 
 ## Contributor
 [@kokushin](https://github.com/kokushin)
 
 ## License
-Code and documentation copyright 2017 by kokushin. Code released under the [MIT License](https://github.com/kokushin/units/blob/master/LICENSE).
+Code and documentation copyright 2017 by kokushin. Code released under the [MIT License](https://github.com/kokushin/jpn.css/blob/master/LICENSE).
