@@ -42,6 +42,8 @@ npm もしくは GitHub からダウンロードすることができます。
 $ npm install jpn.css -S
 ```
 
+[Download ZIP](https://github.com/kokushin/jpn.css/archive/master.zip)
+
 ## Bootstrapデモ
 
 - [Jumbotron](https://kokushin.github.io/jpn.css/demo/bootstrap/jumbotron.html)
@@ -49,9 +51,6 @@ $ npm install jpn.css -S
 - [Blog](https://kokushin.github.io/jpn.css/demo/bootstrap/blog.html)
 - [Carousel](https://kokushin.github.io/jpn.css/demo/bootstrap/carousel.html)
 - [Signin](https://kokushin.github.io/jpn.css/demo/bootstrap/signin.html)
-
-## ダウンロード
-[Download ZIP](https://github.com/kokushin/jpn.css/archive/master.zip)
 
 ## Github
 [https://github.com/kokushin/jpn.css](https://github.com/kokushin/jpn.css)
