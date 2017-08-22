@@ -7,7 +7,50 @@
   <meta name="description" content="Bootstrapなど、CSSのフレームワークを適用させた際の日本語表示を最適化します。 jpn.css is Optimize typography in Japanese.">
   <meta name="author" content="kokushin">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" href="dist/jpn.css" id="jpncss">
+  <style>
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #eee;
+    }
+
+    .form-signin {
+      max-width: 330px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+    .form-signin .form-signin-heading,
+    .form-signin .checkbox {
+      margin-bottom: 10px;
+    }
+    .form-signin .checkbox {
+      font-weight: normal;
+    }
+    .form-signin .form-control {
+      position: relative;
+      height: auto;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .form-signin .form-control:focus {
+      z-index: 2;
+    }
+    .form-signin input[type="email"] {
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .form-signin input[type="password"] {
+      margin-bottom: 10px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  </style>
+
+  <link rel="stylesheet" href="../../../dist/bootstrap/jpn.css" id="jpncss">
+
   <style>
       .fixed-footer-bar {
         position: fixed;
@@ -21,22 +64,23 @@
     </style>
 </head>
 <body>
+  <div class="container">
 
-  <header>
-    <h1>jpn.css</h1>
-    <p>Bootstrapなど、CSSのフレームワークを適用させた際の日本語表示を最適化します</p>
-  </header>
+    <form class="form-signin">
+      <h2 class="form-signin-heading">ログインが必要です</h2>
+      <label for="inputEmail" class="sr-only">メールアドレス</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="メールアドレス" required autofocus>
+      <label for="inputPassword" class="sr-only">パスワード</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="パスワード" required>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="remember-me"> パスワードを保存する
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">ログイン</button>
+    </form>
 
-  <main>
-    <section>
-      <h2>jpn.cssとは</h2>
-      <p>CSSのフレームワークなどを適用させた際、日本語だと不格好に見えてしまう問題を解消することを目標にしています。主にタイポグラフィのスタイルがjpn.cssによって調整されます。</p>
-    </section>
-  </main>
-
-  <footer>
-    <small>&copy; 2017 @kokushing</small>
-  </footer>
+  </div> <!-- /container -->
 
   <div class="fixed-footer-bar">
     <button class="btn btn-danger" id="demo-change-styles">jpn.cssを無効にする</button>

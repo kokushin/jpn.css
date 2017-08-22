@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jpn.css - Optimize typography in Japanese</title>
+  <meta name="description" content="Bootstrapなど、CSSのフレームワークを適用させた際の日本語表示を最適化します。 jpn.css is Optimize typography in Japanese.">
+  <meta name="author" content="kokushin">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <style>
+    body {
+      min-height: 75rem; /* Can be removed; just added for demo purposes */
+    }
+
+    .navbar {
+      margin-bottom: 0;
+    }
+
+    .jumbotron {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      margin-bottom: 0;
+      background-color: #fff;
+    }
+
+    .jumbotron p:last-child {
+      margin-bottom: 0;
+    }
+
+    .jumbotron-heading {
+      font-weight: 300;
+    }
+
+    .jumbotron .container {
+      max-width: 40rem;
+    }
+
+    .album {
+      min-height: 50rem; /* Can be removed; just added for demo purposes */
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      background-color: #f7f7f7;
+    }
+
+    .card {
+      float: left;
+      width: 33.333%;
+      padding: .75rem;
+      margin-bottom: 2rem;
+      border: 0;
+    }
+
+    .card > img {
+      margin-bottom: .75rem;
+    }
+
+    .card-text {
+      font-size: 85%;
+    }
+
+    footer {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    footer p {
+      margin-bottom: .25rem;
+    }
+  </style>
+
+  <link rel="stylesheet" href="../../../dist/bootstrap/jpn.css" id="jpncss">
+
+  <style>
+      .fixed-footer-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0,.8);
+        padding: 1em 0;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 py-4">
+          <h4 class="text-white">このサイトについて</h4>
+          <p class="text-muted">下のアルバム、作者、またはその他の背景に関する情報を追加します。人々はいくつかの有益なおいしさを拾うことができるように、それはいくつかの文章を長くします。次に、それらをいくつかのソーシャルネットワーキングサイトまたは連絡先情報にリンクします。</p>
+        </div>
+        <div class="col-sm-4 py-4">
+          <h4 class="text-white">お問い合わせ</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Twitterをフォロー</a></li>
+            <li><a href="#" class="text-white">Facebookでいいね！</a></li>
+            <li><a href="#" class="text-white">メールを送る</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand">Album</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">アルバムのサンプル</h1>
+      <p class="lead text-muted">短くて、その下のコレクション、そのコンテンツ、クリエイターなどについては、短くて甘いですが、短くはないので、人々は単にそれを<br>完全にスキップしません。</p>
+      <p>
+        <a href="#" class="btn btn-primary">メインアクション</a>
+        <a href="#" class="btn btn-secondary">セカンダリーアクション</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="album text-muted">
+    <div class="container">
+
+      <div class="row">
+        <div class="card">
+          <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+          <p class="card-text">これは、追加コンテンツへの自然な導入として以下のテキストをサポートする、より幅広いカードです。このコンテンツはもう少し長くなります。</p>
+        </div>
+        <div class="card">
+          <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+          <p class="card-text">これは、追加コンテンツへの自然な導入として以下のテキストをサポートする、より幅広いカードです。このコンテンツはもう少し長くなります。</p>
+        </div>
+        <div class="card">
+          <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+          <p class="card-text">これは、追加コンテンツへの自然な導入として以下のテキストをサポートする、より幅広いカードです。このコンテンツはもう少し長くなります。</p>
+        </div>
+
+        <div class="card">
+          <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+          <p class="card-text">これは、追加コンテンツへの自然な導入として以下のテキストをサポートする、より幅広いカードです。このコンテンツはもう少し長くなります。</p>
+        </div>
+        <div class="card">
+          <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+          <p class="card-text">これは、追加コンテンツへの自然な導入として以下のテキストをサポートする、より幅広いカードです。このコンテンツはもう少し長くなります。</p>
+        </div>
+        <div class="card">
+          <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+          <p class="card-text">これは、追加コンテンツへの自然な導入として以下のテキストをサポートする、より幅広いカードです。このコンテンツはもう少し長くなります。</p>
+        </div>
+
+        <div class="card">
+          <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+          <p class="card-text">これは、追加コンテンツへの自然な導入として以下のテキストをサポートする、より幅広いカードです。このコンテンツはもう少し長くなります。</p>
+        </div>
+        <div class="card">
+          <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+          <p class="card-text">これは、追加コンテンツへの自然な導入として以下のテキストをサポートする、より幅広いカードです。このコンテンツはもう少し長くなります。</p>
+        </div>
+        <div class="card">
+          <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+          <p class="card-text">これは、追加コンテンツへの自然な導入として以下のテキストをサポートする、より幅広いカードです。このコンテンツはもう少し長くなります。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">トップページへ戻る</a>
+      </p>
+      <p>アルバムの例は &copy; Bootstrap ですが、ダウンロードして自分でカスタマイズしてください！</p>
+      <p>ブートストラップは初めてですか？ <a href="../../">ホームページ</a> にアクセスするか、 <a href="../../getting-started/">スタートガイド</a>をお読みください。</p>
+    </div>
+  </footer>
+
+  <div class="fixed-footer-bar" id="demo-change-styles-bar">
+    <button class="btn btn-danger" id="demo-change-styles-btn">jpn.cssを無効にする</button>
+  </div>
+
+  <script>
+    (function() {
+      var jpncss = document.getElementById('jpncss');
+      var changeStylesBar = document.getElementById('demo-change-styles-bar');
+      var changeStylesBtn = document.getElementById('demo-change-styles-btn');
+      var jpncssFilePath = jpncss.getAttribute('href');
+      var changeFlag = false;
+
+      changeStylesBtn.addEventListener('click', function() {
+        if (!changeFlag) {
+          jpncss.setAttribute('href', '');
+          changeStylesBtn.textContent = 'jpn.cssを有効にする';
+          changeStylesBtn.setAttribute('class', 'btn btn-success');
+          changeFlag = true;
+        } else {
+          jpncss.setAttribute('href', jpncssFilePath);
+          changeStylesBtn.textContent = 'jpn.cssを無効にする';
+          changeStylesBtn.setAttribute('class', 'btn btn-danger');
+          changeFlag = false;
+        }
+      });
+
+      document.body.style.paddingBottom = changeStylesBar.clientHeight + 'px';
+    })();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://getbootstrap.com/assets/js/vendor/holder.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>

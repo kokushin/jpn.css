@@ -2,6 +2,23 @@
 // Reboot
 //
 
+@font-face {
+  font-family: YuGothicMedium;
+  src: local("Yu Gothic Medium");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 200;
+}
+
 html[lang=ja] {
   line-height: 1.15;
 }
@@ -9,4 +26,16 @@ html[lang=ja] {
 [lang=ja] body {
   font-family: $font-family-base;
   line-height: $line-height-base;
+
+  // for IE10+
+  @media all and (-ms-high-contrast: none)  {
+    & {
+      font-family: Verdana, Meiryo, sans-serif;
+    }
+  }
+  @media all and (-ms-high-contrast: active) {
+    & {
+      font-family: Verdana, Meiryo, sans-serif;
+    }
+  }
 }
