@@ -7,12 +7,17 @@
   "license": "MIT",
   "scripts": {
     "deploy": "np --no-cleanup",
+    "test": "opener tests/index.html",
     "compile:bootstrap": "node-sass --include-path scss src/bootstrap/jpn.scss dist/bootstrap/jpn.css --output-style expanded",
     "build:bootstrap": "node-sass --include-path scss src/bootstrap/jpn.scss dist/bootstrap/jpn.min.css --output-style compressed && npm run compile:bootstrap",
-    "dev:bootstrap": "node-sass --include-path scss src/bootstrap/jpn.scss dist/bootstrap/jpn.css --output-style expanded -w"
+    "dev:bootstrap": "node-sass --include-path scss src/bootstrap/jpn.scss dist/bootstrap/jpn.css --output-style expanded -w",
+    "compile:pure": "node-sass --include-path scss src/pure/jpn.scss dist/pure/jpn.css --output-style expanded",
+    "build:pure": "node-sass --include-path scss src/pure/jpn.scss dist/pure/jpn.min.css --output-style compressed && npm run compile:pure",
+    "dev:pure": "node-sass --include-path scss src/pure/jpn.scss dist/pure/jpn.css --output-style expanded -w"
   },
   "devDependencies": {
     "node-sass": "^4.5.3",
-    "np": "^2.16.0"
+    "np": "^2.16.0",
+    "opener": "^1.4.3"
   }
 }
