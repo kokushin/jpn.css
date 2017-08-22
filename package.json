@@ -1,8 +1,8 @@
 {
-  "name": "jpncss",
+  "name": "jpn.css",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/kokushin/jpncss.git",
+  "repository": "https://github.com/kokushin/jpn.css.git",
   "author": "kokushin <mail@kokush.in>",
   "license": "MIT",
   "scripts": {

@@ -4,7 +4,7 @@ Optimize typography in Japanese.
 
 [https://kokushin.github.io/jpn.css/](https://kokushin.github.io/jpn.css/)
 
-![jpncss](https://raw.githubusercontent.com/kokushin/jpn.css/master/docs/img/jpncss.gif)
+![jpn.css](https://raw.githubusercontent.com/kokushin/jpn.css/master/docs/img/jpn.css.gif)
 
 [![npm version](https://badge.fury.io/js/jpn.css.svg)](https://badge.fury.io/js/jpn.css)
 [![npm download](http://img.shields.io/npm/dm/jpn.css.svg)](https://www.npmjs.com/package/jpn.css)
@@ -31,7 +31,7 @@ jpn.cssは、BootstrapなどCSSフレームワークを適用させた際、日�
 jpn.cssを `head` 内で読み込ませてください。フレームワークを利用している場合は、その後に読み込ませる必要があります。
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/jpncss@latest/dist/bootstrap/jpn.min.css">
+<link rel="stylesheet" href="https://unpkg.com/jpn.css@latest/dist/bootstrap/jpn.min.css">
 ```
 
 ## ダウンロード
@@ -39,7 +39,7 @@ jpn.cssを `head` 内で読み込ませてください。フレームワーク�
 npm もしくは GitHub からダウンロードすることができます。
 
 ```bash
-$ npm install jpncss -S
+$ npm install jpn.css -S
 ```
 
 ## Bootstrapデモ
