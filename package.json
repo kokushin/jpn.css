@@ -1,0 +1,16 @@
+{
+  "name": "jpncss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kokushin/jpncss.git",
+  "author": "kokushin <mail@kokush.in>",
+  "license": "MIT",
+  "scripts": {
+    "compile": "node-sass --include-path scss src/jpn.scss dist/jpn.css --output-style expanded",
+    "build": "node-sass --include-path scss src/jpn.scss dist/jpn.css --output-style compressed",
+    "dev": "node-sass --include-path scss src/jpn.scss dist/jpn.css --output-style expanded -w"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
