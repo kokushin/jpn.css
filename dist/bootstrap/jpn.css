@@ -1,0 +1,62 @@
+html[lang=ja] {
+  line-height: 1.15;
+}
+
+[lang=ja] body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.8;
+}
+
+[lang=ja] h1, [lang=ja] h2, [lang=ja] h3, [lang=ja] h4, [lang=ja] h5, [lang=ja] h6, [lang=ja]
+.h1, [lang=ja] .h2, [lang=ja] .h3, [lang=ja] .h4, [lang=ja] .h5, [lang=ja] .h6 {
+  margin-bottom: 0.475rem;
+  line-height: 1.4;
+}
+
+[lang=ja] h1, [lang=ja] .h1 {
+  font-size: 2.375rem;
+}
+
+[lang=ja] h2, [lang=ja] .h2 {
+  font-size: 1.875rem;
+}
+
+[lang=ja] h3, [lang=ja] .h3 {
+  font-size: 1.625rem;
+}
+
+[lang=ja] h4, [lang=ja] .h4 {
+  font-size: 1.375rem;
+}
+
+[lang=ja] h5, [lang=ja] .h5 {
+  font-size: 1.125rem;
+}
+
+[lang=ja] h6, [lang=ja] .h6 {
+  font-size: 0.875rem;
+}
+
+[lang=ja] .display-1 {
+  font-size: 5.875rem;
+  line-height: 1.4;
+}
+
+[lang=ja] .display-2 {
+  font-size: 5.375rem;
+  line-height: 1.4;
+}
+
+[lang=ja] .display-3 {
+  font-size: 4.375rem;
+  line-height: 1.4;
+}
+
+[lang=ja] .display-4 {
+  font-size: 3.375rem;
+  line-height: 1.4;
+}
+
+[lang=ja] .btn-lg {
+  font-size: 1.125rem;
+}
