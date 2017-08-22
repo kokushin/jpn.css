@@ -3,17 +3,9 @@
 //
 
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "游ゴシック Medium", "Yu Gothic", YuGothic, YuGothicMedium, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
-// $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-// $font-size-lg:   1.125rem !default;
-// $font-size-sm:   .75rem !default;
-
-// $font-weight-normal: normal !default;
-// $font-weight-bold: bold !default;
-
-// $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.7 !default;
 
 $h1-font-size: 2.375rem !default;
@@ -27,7 +19,6 @@ $headings-margin-bottom: .625rem !default;
 $headings-font-family:   inherit !default;
 $headings-font-weight:   bold !default;
 $headings-line-height:   1.4 !default;
-// $headings-color:         inherit !default;
 
 $display1-size: 5.75rem !default;
 $display2-size: 5.25rem !default;
@@ -40,26 +31,6 @@ $display3-weight:     500 !default;
 $display4-weight:     500 !default;
 $display-line-height: 1.2 !default;
 
-$lead-font-size:   1.125rem !default;
-// $lead-font-weight: 300 !default;
+$lead-font-size: 1.125rem !default;
 
-// $small-font-size: 80% !default;
-
-// $text-muted: $gray-600 !default;
-
-// $blockquote-small-color:  $gray-600 !default;
-$blockquote-font-size:    ($font-size-base * 1.25) !default;
-
-// $hr-border-color: rgba($black,.1) !default;
-// $hr-border-width: $border-width !default;
-
-// $mark-padding: .2em !default;
-
-// $dt-font-weight: $font-weight-bold !default;
-
-// $kbd-box-shadow:         inset 0 -.1rem 0 rgba($black,.25) !default;
-// $nested-kbd-font-weight: $font-weight-bold !default;
-
-// $list-inline-padding: 5px !default;
-
-// $mark-bg: #fcf8e3 !default;
+$blockquote-font-size: ($font-size-base * 1.25) !default;

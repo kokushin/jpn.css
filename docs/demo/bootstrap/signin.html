@@ -7,47 +7,7 @@
   <meta name="description" content="Bootstrapなど、CSSのフレームワークを適用させた際の日本語表示を最適化します。 jpn.css is Optimize typography in Japanese.">
   <meta name="author" content="kokushin">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <style>
-    body {
-      padding-top: 40px;
-      padding-bottom: 40px;
-      background-color: #eee;
-    }
-
-    .form-signin {
-      max-width: 330px;
-      padding: 15px;
-      margin: 0 auto;
-    }
-    .form-signin .form-signin-heading,
-    .form-signin .checkbox {
-      margin-bottom: 10px;
-    }
-    .form-signin .checkbox {
-      font-weight: normal;
-    }
-    .form-signin .form-control {
-      position: relative;
-      height: auto;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      padding: 10px;
-      font-size: 16px;
-    }
-    .form-signin .form-control:focus {
-      z-index: 2;
-    }
-    .form-signin input[type="email"] {
-      margin-bottom: -1px;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-    .form-signin input[type="password"] {
-      margin-bottom: 10px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="../../css/signin.css">
 
   <link rel="stylesheet" href="../../../dist/bootstrap/jpn.css" id="jpncss">
 
@@ -82,8 +42,8 @@
 
   </div> <!-- /container -->
 
-  <div class="fixed-footer-bar">
-    <button class="btn btn-danger" id="demo-change-styles">jpn.cssを無効にする</button>
+  <div class="fixed-footer-bar" id="demo-change-styles-bar">
+    <button class="btn btn-danger" id="demo-change-styles-btn">jpn.cssを無効にする</button>
   </div>
 
   <script>

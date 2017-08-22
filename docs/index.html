@@ -7,39 +7,95 @@
   <meta name="description" content="Bootstrapなど、CSSのフレームワークを適用させた際の日本語表示を最適化します。 jpn.css is Optimize typography in Japanese.">
   <meta name="author" content="kokushin">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" href="dist/jpn.css" id="jpncss">
+  <link rel="stylesheet" href="./css/narrow-jumbotron.css">
+
+  <link rel="stylesheet" href="../dist/bootstrap/jpn.css" id="jpncss">
+
   <style>
-      .fixed-footer-bar {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: rgba(0,0,0,.8);
-        padding: 1em 0;
-        text-align: center;
-      }
-    </style>
+    .box {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .box + .box {
+      margin-top: 3rem;
+    }
+    .box:last-of-type {
+      margin-bottom: 5rem;
+    }
+    .fixed-footer-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,.8);
+      padding: 1em 0;
+      text-align: center;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 
-  <header>
-    <h1>jpn.css</h1>
-    <p>Bootstrapなど、CSSのフレームワークを適用させた際の日本語表示を最適化します</p>
-  </header>
+  <div class="container">
+    <div class="header clearfix">
+      <nav>
+        <ul class="nav nav-pills float-right">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">ダウンロード</a>
+          </li>
+        </ul>
+      </nav>
+      <h3 class="text-muted">jpn.css</h3>
+    </div>
 
-  <main>
-    <section>
-      <h2>jpn.cssとは</h2>
-      <p>CSSのフレームワークなどを適用させた際、日本語だと不格好に見えてしまう問題を解消することを目標にしています。主にタイポグラフィのスタイルがjpn.cssによって調整されます。</p>
-    </section>
-  </main>
+    <div class="jumbotron">
+      <h1 class="display-3">日本語に最適化</h1>
+      <p class="lead">jpn.cssは、BootstrapなどCSSフレームワークを適用させた際、<br>日本語だと不格好に見えてしまう問題を解消するためのスタイルシートです。</p>
+      <p><a class="btn btn-lg btn-success" href="https://github.com/kokushin/jpncss" role="button">GitHubをフォロー</a></p>
+    </div>
 
-  <footer>
-    <small>&copy; 2017 @kokushing</small>
-  </footer>
+    <div class="row marketing">
+      <div class="col-lg-6">
+        <h4>タイポグラフィを最適化</h4>
+        <p>画面下部にある「jpn.cssを無効にする」ボタンを押してみてください。最適化された結果を確認することができます。</p>
 
-  <div class="fixed-footer-bar">
-    <button class="btn btn-danger" id="demo-change-styles">jpn.cssを無効にする</button>
+        <h4>モダンなフォント設定</h4>
+        <p>フォントには美しくデザインされた「游ゴシック」を採用しています。</p>
+      </div>
+
+      <div class="col-lg-6">
+        <h4>Bootstrap4に対応</h4>
+        <p>最新バージョンであるBootstrap4に対応しています。今後のアップデートで、より多くのフレームワークに対応させる予定です。</p>
+
+        <h4>最低限の調整</h4>
+        <p>主にタイポグラフィのスタイルのみ最適化されるため、他の要素への影響はありません。</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>使用方法</h2>
+      <p>jpn.cssを <code>&lt;head&gt;</code> 内で読み込ませてください。<br>フレームワークを利用している場合は、その後に読み込ませる必要があります。</p>
+      <pre><code class="html">&lt;link rel="stylesheet" href="https://unpkg.com/jpncss@latest/dist/bootstrap/jpn.min.css"&gt;</code></pre>
+    </div>
+
+    <div class="box">
+      <h2>ダウンロード</h2>
+      <p><a href="https://www.npmjs.com/package/jpncss" target="_blank">npm</a> もしくは <a href="https://github.com/kokushin/jpncss/archive/master.zip">GitHub</a> からダウンロードすることができます。</p>
+      <pre><code class="bash">$ npm install jpncss -S</code></pre>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2017 <a href="https://twitter.com/kokushing">@kokushing</a></p>
+    </footer>
+
+  </div> <!-- /container -->
+
+
+  <div class="fixed-footer-bar" id="demo-change-styles-bar">
+    <button class="btn btn-danger" id="demo-change-styles-btn">jpn.cssを無効にする</button>
   </div>
 
   <script>
