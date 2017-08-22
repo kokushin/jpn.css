@@ -6,11 +6,13 @@
   "author": "kokushin <mail@kokush.in>",
   "license": "MIT",
   "scripts": {
+    "deploy": "np --no-cleanup",
     "compile:bootstrap": "node-sass --include-path scss src/bootstrap/jpn.scss dist/bootstrap/jpn.css --output-style expanded",
     "build:bootstrap": "node-sass --include-path scss src/bootstrap/jpn.scss dist/bootstrap/jpn.min.css --output-style compressed && npm run compile:bootstrap",
     "dev:bootstrap": "node-sass --include-path scss src/bootstrap/jpn.scss dist/bootstrap/jpn.css --output-style expanded -w"
   },
   "devDependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "np": "^2.16.0"
   }
 }
