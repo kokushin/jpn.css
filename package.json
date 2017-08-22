@@ -8,9 +8,13 @@
   "scripts": {
     "deploy": "np --no-cleanup",
     "compile:bootstrap": "node-sass --include-path scss src/bootstrap/jpn.scss dist/bootstrap/jpn.css --output-style expanded",
+    "compile:mdl": "node-sass --include-path scss src/mdl/jpn.scss dist/mdl/jpn.css --output-style expanded",
     "build:bootstrap": "node-sass --include-path scss src/bootstrap/jpn.scss dist/bootstrap/jpn.min.css --output-style compressed && npm run compile:bootstrap",
+    "build:mdl": "node-sass --include-path scss src/mdl/jpn.scss dist/mdl/jpn.min.css --output-style compressed && npm run compile:mdl",
+    "dev:bootstrap": "node-sass --include-path scss src/bootstrap/jpn.scss dist/bootstrap/jpn.css --output-style expanded -w",
+    "dev:mdl": "node-sass --include-path scss src/mdl/jpn.scss dist/mdl/jpn.css --output-style expanded -w",
     "test:bootstrap": "npm run compile:bootstrap && opener tests/bootstrap/index.html",
-    "dev:bootstrap": "node-sass --include-path scss src/bootstrap/jpn.scss dist/bootstrap/jpn.css --output-style expanded -w"
+    "test:mdl": "npm run compile:mdl && opener tests/mdl/index.html"
   },
   "devDependencies": {
     "node-sass": "^4.5.3",

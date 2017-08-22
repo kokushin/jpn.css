@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/*! jpn.css for MaterialDesignLite@4x | MIT License | Copyright 2017 @kokushing */
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "游ゴシック Medium", "Yu Gothic", YuGothic, YuGothicMedium, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.7;
+}
