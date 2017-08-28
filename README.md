@@ -7,7 +7,6 @@ Optimize typography in Japanese.
 ![jpn.css](https://raw.githubusercontent.com/kokushin/jpn.css/master/docs/img/jpncss.gif)
 
 [![npm version](https://badge.fury.io/js/jpn.css.svg)](https://badge.fury.io/js/jpn.css)
-[![npm download](http://img.shields.io/npm/dm/jpn.css.svg)](https://www.npmjs.com/package/jpn.css)
 [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/kokushin/jpn.css/master/LICENSE)
 
 ## 特徴
